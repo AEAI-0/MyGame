@@ -54,6 +54,15 @@ public class Game1 : Game
         linkHurtPosition = linkPosition;
         linkSpeed = 100f;
         link_direction = Direction.direct_down;
+        blocknumber = 0;
+        Monsternumber = 1;
+        while (queue.Count > 0)
+        {
+            queue.Dequeue();
+        } while (firequeue.Count > 0)
+        {
+            firequeue.Dequeue();
+        }
 
         base.Initialize();
     }
@@ -103,9 +112,12 @@ public class Game1 : Game
         fire.Update(gameTime);
         boomtimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
         firetimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
-        if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+        if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape) || Keyboard.GetState().IsKeyDown(Keys.Q))
             Exit();
-
+        if (Keyboard.GetState().IsKeyDown(Keys.R))
+        {
+            Initialize();
+        }
         // TODO: Add your update logic here
         // TODO: Add your update logic here
         var kstate = Keyboard.GetState();
