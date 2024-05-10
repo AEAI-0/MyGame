@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteHeart.gif</SourceFile>
+  <SourceFile>f:/QQDownload/The Legend of Zelda Breath of Otto/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteHeart.gif</SourceFile>
   <SourceTime>2024-05-10T23:31:41.2446799+08:00</SourceTime>
-  <DestFile>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/bin/DesktopGL/Content/ZeldaSpriteHeart.xnb</DestFile>
-  <DestTime>2024-05-10T23:56:13.0994401+08:00</DestTime>
+  <DestFile>f:/QQDownload/The Legend of Zelda Breath of Otto/The Legend of Zelda Breath of Otto1/MyGame/Content/bin/DesktopGL/Content/ZeldaSpriteHeart.xnb</DestFile>
+  <DestTime>2024-05-11T00:13:46.5402188+08:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T19:44:56+08:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

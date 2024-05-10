@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {}
+    "f:\\QQDownload\\The Legend of Zelda Breath of Otto\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {}
   },
   "projects": {
-    "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {
+    "f:\\QQDownload\\The Legend of Zelda Breath of Otto\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+        "projectUniqueName": "f:\\QQDownload\\The Legend of Zelda Breath of Otto\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
         "projectName": "MyGame",
-        "projectPath": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
+        "projectPath": "f:\\QQDownload\\The Legend of Zelda Breath of Otto\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+        "packagesPath": "C:\\Users\\XiaoPeak\\.nuget\\packages\\",
+        "outputPath": "f:\\QQDownload\\The Legend of Zelda Breath of Otto\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XiaoPeak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,12 +65,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.27, 6.0.27]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
