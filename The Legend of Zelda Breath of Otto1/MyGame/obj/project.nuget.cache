@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "6r/Mm6YP1w2hjt3FKG2EQFYArQEwjutPSwQsCJ+Rod/pMwL0LaBJBet/PlsHe2B0BdQ+nieIwQdlIFwOdGfSzQ==",
+  "success": true,
+  "projectFilePath": "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\monogame.content.builder.task\\3.8.1.303\\monogame.content.builder.task.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.1.303\\monogame.framework.desktopgl.3.8.1.303.nupkg.sha512",
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\XiaoPeak\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}
