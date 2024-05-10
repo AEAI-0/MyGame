@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.net\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {}
+    "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {}
   },
   "projects": {
-    "D:\\.net\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {
+    "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.net\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+        "projectUniqueName": "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
         "projectName": "MyGame",
-        "projectPath": "D:\\.net\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+        "projectPath": "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
         "packagesPath": "C:\\Users\\XiaoPeak\\.nuget\\packages\\",
-        "outputPath": "D:\\.net\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
+        "outputPath": "d:\\.net\\The Legend of Zelda Breath of Otto2\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XiaoPeak\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System.Collections;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using TextureAtlas;
@@ -11,6 +12,7 @@ public class Game1 : Game
 
     Texture2D Link;
     Texture2D linkAttack;
+    Texture2D itemtexture;
     bool isAttack;
     Direction link_direction;
     Vector2 linkPosition;
@@ -18,6 +20,10 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private TextureAtlas.LinkMovement linkmovement;
+    private Item linkitem;
+    float itemtimer = 0f;
+
+    private Stack stack = new Stack();
 
     public Game1()
     {
@@ -45,6 +51,9 @@ public class Game1 : Game
         Link = Content.Load<Texture2D>("LinkMovement");
         linkmovement = new TextureAtlas.LinkMovement(Link, 8, 1);
         linkAttack = Content.Load<Texture2D>("ZeldaSpriteLinkSwingSwordFront");
+        itemtexture = Content.Load<Texture2D>("ZeldaSpriteBomb");
+        linkitem = new Item(itemtexture);
+
     }
 
     protected override void Update(GameTime gameTime)
@@ -138,6 +147,15 @@ public class Game1 : Game
                 break;
 
         }
+        itemtimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+        if (kstate.IsKeyDown(Keys.D1) && itemtimer >= 1.0f)
+        {
+            // 在冷却时间后执行操作
+            stack.Push(linkPosition);
+
+            // 重置计时器
+            itemtimer = 0.0f;
+        }
         base.Update(gameTime);
 
 
@@ -166,22 +184,25 @@ public class Game1 : Game
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
+        _spriteBatch.Begin();
 
-        float timer = 0f;
-        timer += (float)gameTime.ElapsedGameTime.TotalSeconds;
         // TODO: Add your drawing code here
         if (isAttack)
         {
-            _spriteBatch.Begin();
+            // _spriteBatch.Begin();
             _spriteBatch.Draw(linkAttack, linkPosition, Color.White);
-            _spriteBatch.End();
+            //_spriteBatch.End();
             isAttack = false;
         }
         else
         {
             linkmovement.Draw(_spriteBatch, linkPosition);
         }
-
+        foreach (Vector2 pos in stack)
+        {
+            linkitem.Draw(_spriteBatch, pos, link_direction, gameTime);
+        }
+        _spriteBatch.End();
         base.Draw(gameTime);
     }
 }
