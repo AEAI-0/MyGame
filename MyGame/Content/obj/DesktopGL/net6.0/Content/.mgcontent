@@ -4,25 +4,27 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/En1.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/En2.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/En3.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/En4.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/En5.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/fire.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/LinkMovement.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/PriorityGraphicsDungeon1.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteBomb.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkBack.gif</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkFront.gif</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkLeft.gif</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkRight.gif</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordBack.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordFront.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordLeft.png</File>
-    <File>D:/.NET设计/MyGame-main1.1/MyGame-main/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordRight.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/En1.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/En2.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/En3.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/En4.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/En5.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/fire.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/LinkMovement.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/PriorityGraphicsDungeon1.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteBomb.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteHeart.gif</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkBack.gif</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkFront.gif</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkLeft.gif</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkRight.gif</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordBack.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordFront.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordLeft.png</File>
+    <File>E:/QQfile/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordRight.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

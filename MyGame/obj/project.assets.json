@@ -102,19 +102,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AEI\\.nuget\\packages\\": {}
+    "C:\\Users\\admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\.NET设计\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+      "projectUniqueName": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
       "projectName": "MyGame",
-      "projectPath": "D:\\.NET设计\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
-      "packagesPath": "C:\\Users\\AEI\\.nuget\\packages\\",
-      "outputPath": "D:\\.NET设计\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
+      "projectPath": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\MyGame.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "E:\\QQfile\\The Legend of Zelda Breath of Otto1\\MyGame\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AEI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -165,24 +165,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[6.0.29, 6.0.29]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
