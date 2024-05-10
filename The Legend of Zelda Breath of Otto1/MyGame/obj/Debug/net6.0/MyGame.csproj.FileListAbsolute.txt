@@ -137,3 +137,4 @@ D:\.net\The Legend of Zelda Breath of Otto3\The Legend of Zelda Breath of Otto1\
 D:\.net\The Legend of Zelda Breath of Otto3\The Legend of Zelda Breath of Otto1\MyGame\obj\Debug\net6.0\MyGame.pdb
 D:\.net\The Legend of Zelda Breath of Otto3\The Legend of Zelda Breath of Otto1\MyGame\obj\Debug\net6.0\MyGame.genruntimeconfig.cache
 D:\.net\The Legend of Zelda Breath of Otto3\The Legend of Zelda Breath of Otto1\MyGame\obj\Debug\net6.0\ref\MyGame.dll
+D:\.net\The Legend of Zelda Breath of Otto3\The Legend of Zelda Breath of Otto1\MyGame\bin\Debug\net6.0\Content\fire.xnb

@@ -13,6 +13,7 @@ public class Game1 : Game
     Texture2D Link;
     Texture2D linkAttack;
     Texture2D itemtexture;
+    Texture2D boomfire;
     bool isAttack;
     Direction link_direction;
     Vector2 linkPosition;
@@ -20,11 +21,14 @@ public class Game1 : Game
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
     private TextureAtlas.LinkMovement linkmovement;
+    private TextureAtlas.fireAnimated fire;
     private Item linkitem;
     float itemtimer = 0f;
     float boomtimer = 0f;
+    float firetimer = 0f;
 
     private Queue queue = new Queue();
+    private Queue firequeue = new Queue();
 
     public Game1()
     {
@@ -50,6 +54,8 @@ public class Game1 : Game
 
         // TODO: use this.Content to load your game content here
         Link = Content.Load<Texture2D>("LinkMovement");
+        boomfire = Content.Load<Texture2D>("fire");
+        fire = new TextureAtlas.fireAnimated(boomfire, 2, 1);
         linkmovement = new TextureAtlas.LinkMovement(Link, 8, 1);
         linkAttack = Content.Load<Texture2D>("ZeldaSpriteLinkSwingSwordFront");
         itemtexture = Content.Load<Texture2D>("ZeldaSpriteBomb");
@@ -59,7 +65,9 @@ public class Game1 : Game
 
     protected override void Update(GameTime gameTime)
     {
+        fire.Update(gameTime);
         boomtimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
+        firetimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
@@ -158,12 +166,20 @@ public class Game1 : Game
             // 重置计时器
             itemtimer = 0.0f;
         }
-        if (boomtimer >= 3.0f)
+        if (boomtimer >= 2.0f)
         {
             boomtimer = 0.0f;
             if (queue.Count > 0)
             {
-                queue.Dequeue();
+                firequeue.Enqueue(queue.Dequeue());
+            }
+        }
+        if (firetimer >= 3.0f)
+        {
+            firetimer = 0.0f;
+            if (firequeue.Count > 0)
+            {
+                firequeue.Dequeue();
             }
         }
         base.Update(gameTime);
@@ -172,25 +188,7 @@ public class Game1 : Game
         base.Update(gameTime);
     }
 
-    /*  protected override void Draw(GameTime gameTime)
-     {
-         GraphicsDevice.Clear(Color.CornflowerBlue);
 
-         // TODO: Add your drawing code here
-         _spriteBatch.Begin();
-         _spriteBatch.Draw(Link,
-     linkPosition,
-     null,
-     Color.White,
-     0f,
-     new Vector2(Link.Width / 2, Link.Height / 2),
-     Vector2.One,
-     SpriteEffects.None,
-     0f);
-         _spriteBatch.End();
-
-         base.Draw(gameTime);
-     } */
     protected override void Draw(GameTime gameTime)
     {
         GraphicsDevice.Clear(Color.CornflowerBlue);
@@ -211,6 +209,10 @@ public class Game1 : Game
         foreach (Vector2 pos in queue)
         {
             linkitem.Draw(_spriteBatch, pos, link_direction, gameTime);
+        }
+        foreach (Vector2 pos in firequeue)
+        {
+            fire.Draw(_spriteBatch, pos);
         }
         _spriteBatch.End();
         base.Draw(gameTime);
