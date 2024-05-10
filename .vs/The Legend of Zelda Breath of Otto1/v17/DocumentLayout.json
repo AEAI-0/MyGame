@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\.NET\u8BBE\u8BA1\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27BF6DA5-B576-4C43-A2A4-361D06CF3593}|MyGame\\MyGame.csproj|d:\\.net\u8BBE\u8BA1\\mygame-main1.1\\mygame-main\\the legend of zelda breath of otto1\\mygame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BF6DA5-B576-4C43-A2A4-361D06CF3593}|MyGame\\MyGame.csproj|solutionrelative:mygame\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game1.cs",
+              "DocumentMoniker": "D:\\.NET\u8BBE\u8BA1\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\MyGame\\Game1.cs",
+              "RelativeDocumentMoniker": "MyGame\\Game1.cs",
+              "ToolTip": "D:\\.NET\u8BBE\u8BA1\\MyGame-main1.1\\MyGame-main\\The Legend of Zelda Breath of Otto1\\MyGame\\Game1.cs",
+              "RelativeToolTip": "MyGame\\Game1.cs",
+              "ViewState": "AQIAADMBAAAAAAAAAAAgwEUBAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T15:39:10.974Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
