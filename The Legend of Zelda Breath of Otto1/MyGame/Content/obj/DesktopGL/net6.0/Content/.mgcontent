@@ -4,6 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>D:/.net/The Legend of Zelda Breath of Otto3/The Legend of Zelda Breath of Otto1/MyGame/Content/fire.png</File>
     <File>D:/.net/The Legend of Zelda Breath of Otto3/The Legend of Zelda Breath of Otto1/MyGame/Content/LinkMovement.png</File>
     <File>D:/.net/The Legend of Zelda Breath of Otto3/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteBomb.png</File>
     <File>D:/.net/The Legend of Zelda Breath of Otto3/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkBack.gif</File>
@@ -16,6 +17,7 @@
     <File>D:/.net/The Legend of Zelda Breath of Otto3/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordRight.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
