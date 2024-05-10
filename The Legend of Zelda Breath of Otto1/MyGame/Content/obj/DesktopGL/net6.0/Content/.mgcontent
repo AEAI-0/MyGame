@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Profile>Reach</Profile>
+  <Platform>DesktopGL</Platform>
+  <Config />
+  <SourceFiles>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/LinkMovement.png</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkBack.gif</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkFront.gif</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkLeft.gif</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkRight.gif</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordBack.png</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordFront.png</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordLeft.png</File>
+    <File>D:/.net/The Legend of Zelda Breath of Otto1/MyGame/Content/ZeldaSpriteLinkSwingSwordRight.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
