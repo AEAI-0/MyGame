@@ -13,13 +13,16 @@ public class Game1 : Game
     Texture2D Block;
     Texture2D Link;
     Texture2D linkAttack;
+    Texture2D linkHurt;
     Texture2D itemtexture;
     Texture2D boomfire;
     int blocknumber = 0;
     int Monsternumber = 1;
     bool isAttack;
+    bool isHurt;
     Direction link_direction;
     Vector2 linkPosition;
+    Vector2 linkHurtPosition;
     float linkSpeed;
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
@@ -48,6 +51,7 @@ public class Game1 : Game
         // TODO: Add your initialization logic here
         linkPosition = new Vector2(_graphics.PreferredBackBufferWidth / 2,
         _graphics.PreferredBackBufferHeight / 2);
+        linkHurtPosition = linkPosition;
         linkSpeed = 100f;
         link_direction = Direction.direct_down;
 
@@ -87,6 +91,7 @@ public class Game1 : Game
         fire = new TextureAtlas.fireAnimated(boomfire, 2, 1);
         linkmovement = new TextureAtlas.LinkMovement(Link, 8, 1);
         linkAttack = Content.Load<Texture2D>("ZeldaSpriteLinkSwingSwordFront");
+        linkHurt = Content.Load<Texture2D>("ZeldaSpriteHeart");
         itemtexture = Content.Load<Texture2D>("ZeldaSpriteBomb");
         linkitem = new Item(itemtexture);
 
@@ -94,6 +99,7 @@ public class Game1 : Game
 
     protected override void Update(GameTime gameTime)
     {
+        linkHurtPosition = new Vector2(linkPosition.X + 5.0f, linkPosition.Y - 10.0f);
         fire.Update(gameTime);
         boomtimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
         firetimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -145,6 +151,12 @@ public class Game1 : Game
         {
             link_direction = Direction.direct_right;
             linkPosition.X += linkSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        }
+        if (kstate.IsKeyDown(Keys.E))//press E = hurt
+        {
+            isHurt = true;
+            //link_direction = Direction.direct_right;
+            //linkPosition.X += linkSpeed * (float)gameTime.ElapsedGameTime.TotalSeconds;
         }
         if (kstate.IsKeyDown(Keys.Z))
         {
@@ -331,6 +343,14 @@ public class Game1 : Game
             _spriteBatch.Draw(linkAttack, linkPosition, Color.White);
             //_spriteBatch.End();
             isAttack = false;
+        }
+        else if (isHurt)
+        {
+            // _spriteBatch.Begin();
+            _spriteBatch.Draw(linkHurt, linkHurtPosition, Color.White);
+            linkmovement.Draw(_spriteBatch, linkPosition);
+            //_spriteBatch.End();
+            isHurt = false;
         }
         else
         {
