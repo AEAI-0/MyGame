@@ -22,8 +22,9 @@ public class Game1 : Game
     private TextureAtlas.LinkMovement linkmovement;
     private Item linkitem;
     float itemtimer = 0f;
+    float boomtimer = 0f;
 
-    private Stack stack = new Stack();
+    private Queue queue = new Queue();
 
     public Game1()
     {
@@ -58,6 +59,7 @@ public class Game1 : Game
 
     protected override void Update(GameTime gameTime)
     {
+        boomtimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
         if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
             Exit();
 
@@ -151,10 +153,18 @@ public class Game1 : Game
         if (kstate.IsKeyDown(Keys.D1) && itemtimer >= 1.0f)
         {
             // 在冷却时间后执行操作
-            stack.Push(linkPosition);
+            queue.Enqueue(linkPosition);
 
             // 重置计时器
             itemtimer = 0.0f;
+        }
+        if (boomtimer >= 3.0f)
+        {
+            boomtimer = 0.0f;
+            if (queue.Count > 0)
+            {
+                queue.Dequeue();
+            }
         }
         base.Update(gameTime);
 
@@ -198,7 +208,7 @@ public class Game1 : Game
         {
             linkmovement.Draw(_spriteBatch, linkPosition);
         }
-        foreach (Vector2 pos in stack)
+        foreach (Vector2 pos in queue)
         {
             linkitem.Draw(_spriteBatch, pos, link_direction, gameTime);
         }
